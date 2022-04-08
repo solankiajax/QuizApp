@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/welcomeYourName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/welcomeHeading"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/questionTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:text="@string/questionTitle"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Question"
+        android:layout_width="354dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="164dp"
+        android:text="@string/question"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="319dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:max="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.764"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeYourName" />
+
+    <TextView
+        android:id="@+id/progressNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/progressNumber"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/option1"
+        android:layout_width="225dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/white_button_round_corner_one"
+        android:text="@string/option1"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/option2"
+        android:layout_width="225dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="356dp"
+        android:background="@drawable/white_button_round_corner_one"
+        android:text="@string/option2"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="225dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="564dp"
+        android:background="@drawable/gray_button_round_corner_one"
+        android:onClick="submit"
+        android:text="@string/submit"
+        android:textAllCaps="false"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/option3"
+        android:layout_width="225dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="432dp"
+        android:background="@drawable/white_button_round_corner_one"
+        android:text="@string/option3"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
